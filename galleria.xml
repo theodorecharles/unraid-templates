@@ -13,7 +13,7 @@
   <Category>MediaApp:Photos Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theodorecharles/Galleria/master/unraid-template.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/theodorecharles/Galleria/master/frontend/public/icon-512.png</Icon>
+  <Icon>https://raw.githubusercontent.com/theodorecharles/Galleria/blob/master/config/icons/icon-512.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
