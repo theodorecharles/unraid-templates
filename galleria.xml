@@ -10,7 +10,7 @@
   <Support>https://github.com/theodorecharles/Galleria/issues</Support>
   <Project>https://galleria.website/</Project>
   <Overview>Galleria is a modern, self-hosted photography portfolio platform built with React, TypeScript, and Express. Features include image optimization, album management, analytics, Google OAuth authentication, AI title generation (optional), MFA/Passkey support, and a beautiful responsive UI. Perfect for photographers who want full control over their portfolio without monthly fees.</Overview>
-  <Category>MediaApp:Photos Status:Beta</Category>
+  <Category>MediaApp:Photos MediaServer:Photos Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theodorecharles/Galleria/master/unraid-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/theodorecharles/Galleria/refs/heads/master/config/icons/icon-512.png</Icon>
