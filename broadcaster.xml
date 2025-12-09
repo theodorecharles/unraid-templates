@@ -28,7 +28,7 @@
     After first run, create a channels.json in your Data Directory:
     [{"type": "shuffle", "name": "Movies", "slug": "movies", "paths": ["/media/movies"]}]
 
-    See https://github.com/theodoreroddy/Broadcaster for full documentation
+    See https://github.com/theodorecharles/Broadcaster for full documentation
   </Requires>
   <Config Name="WebUI Port" Target="12121" Default="12121" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">12121</Config>
   <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/broadcaster" Mode="rw" Description="Storage for HLS streams, config files (channels.json, config.txt), and logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/broadcaster</Config>
