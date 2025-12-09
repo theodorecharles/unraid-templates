@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled/>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Support the developer</DonateText>
+  <DonateLink>https://github.com/sponsors/theodorecharles</DonateLink>
   <Requires>
     Before first run:
     1. Media Directory - Point to your media library (read-only access)
