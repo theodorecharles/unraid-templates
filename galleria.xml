@@ -10,7 +10,7 @@
   <Support>https://github.com/theodorecharles/Galleria/issues</Support>
   <Project>https://galleria.website/</Project>
   <Overview>Galleria is a modern, self-hosted photography portfolio platform built with React, TypeScript, and Express. Features include image optimization, album management, analytics, Google OAuth authentication, AI title generation (optional), MFA/Passkey support, and a beautiful responsive UI. Perfect for photographers who want full control over their portfolio without monthly fees.</Overview>
-  <Category>MediaApp:Photos MediaServer:Photos Status:Beta</Category>
+  <Category>MediaApp:Photos MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theodorecharles/Galleria/master/unraid-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/theodorecharles/Galleria/refs/heads/master/config/icons/icon-512.png</Icon>
@@ -21,13 +21,24 @@
   <DonateText>Support the developer</DonateText>
   <DonateLink>https://github.com/sponsors/theodorecharles</DonateLink>
   <Requires>
-    Before first run, you must configure:
-    1. Frontend Domain - The URL where users will access your site (e.g., https://photos.yourdomain.com)
-    2. Backend Domain - The API URL (e.g., https://api.yourdomain.com)
-    3. Data Directory - Persistent storage for photos, database, and config
-    
-    For local/testing: Use http://[SERVER-IP]:3000 and http://[SERVER-IP]:3001
-    For production: Set up reverse proxy (Nginx Proxy Manager recommended) with SSL
+      Before first run, you must configure:
+      1. Frontend Domain - The URL where users will access your site (e.g.,
+  https://photos.yourdomain.com)
+      2. Backend Domain - The API URL (e.g., https://api.yourdomain.com)
+      3. Data Directory - Persistent storage for photos, database, and config
+
+      For local/testing: Use http://[SERVER-IP]:3000 and http://[SERVER-IP]:3001
+      For production: Set up reverse proxy (Nginx Proxy Manager recommended) with SSL
+
+      NVIDIA GPU Hardware Encoding (Optional):
+      For faster video transcoding with NVIDIA GPUs, manually add these to your container:
+      1. Edit the container and click "Advanced View" in the top right
+      2. In "Extra Parameters" add: --runtime=nvidia
+      3. Add two new variables (Config Type: Variable):
+         - NVIDIA_DRIVER_CAPABILITIES = all
+         - NVIDIA_VISIBLE_DEVICES = (your GPU UUID or "all")
+
+      To find your GPU UUID, run in Unraid terminal: nvidia-smi -L
   </Requires>
   <Config Name="WebUI Port" Target="3000" Default="" Mode="tcp" Description="Frontend web interface port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="API Port" Target="3001" Default="" Mode="tcp" Description="Backend API port" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
