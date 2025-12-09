@@ -13,7 +13,7 @@
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:12121]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theodorecharles/unraid-templates/master/broadcaster.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/theodoreroddy/Broadcaster/master/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/theodorecharles/Broadcaster/refs/heads/master/broadcaster_icon.png/Icon>
   <ExtraParams>--runtime=nvidia</ExtraParams>
   <PostArgs/>
   <CPUset/>
