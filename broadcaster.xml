@@ -10,7 +10,7 @@
   <Support>https://github.com/theodorecharles/Broadcaster/issues</Support>
   <Project>https://github.com/theodorecharles/Broadcaster</Project>
   <Overview>Create your own 24/7 TV channels from your media library with a retro CRT-style web interface. Broadcaster generates and hosts HTTP Live Streams from local content using FFMpeg with NVIDIA GPU hardware acceleration.</Overview>
-  <Category>MediaApp:Video</Category>
+  <Category>MediaApp:Video MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:12121]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/theodorecharles/unraid-templates/master/broadcaster.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/theodorecharles/Broadcaster/refs/heads/master/broadcaster_icon.png</Icon>
